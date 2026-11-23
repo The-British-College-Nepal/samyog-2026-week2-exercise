@@ -2,7 +2,7 @@ package counter;
 
 /**
  * WordProcessor implementation of the {@link Counter} interface.
- * 
+ *
  * Complete this class in Step 2 and Step 3 on your feature branches.
  */
 public class WordProcessor implements Counter {
@@ -79,4 +79,4 @@ public class WordProcessor implements Counter {
         // TODO [Step 2.3]: Return sentence.length()
         return 0;
     }
-}
+}w
