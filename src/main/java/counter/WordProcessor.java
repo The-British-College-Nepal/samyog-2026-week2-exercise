@@ -2,6 +2,7 @@ package counter;
 
 /**
  * WordProcessor implementation of the {@link Counter} interface.
+ *
  * Complete this class in Step 2 and Step 3 on your feature branches.
  */
 public class WordProcessor implements Counter {
@@ -37,15 +38,9 @@ public class WordProcessor implements Counter {
     @Override
     public int countWords(String sentence) {
         // TODO [Step 3.3]: If sentence == null, assign sentence = this.text;
-        if (sentence == null) {
-            sentence = this.text;
-        }
 
         // TODO [Step 2.1]: If sentence is empty, return 0; otherwise split on spaces.
-        if (sentence.isEmpty()) {
-            return 0;
-        }
-        return sentence.split(" ").length;
+        return sentence.split(" ").length ;
     }
 
     /**
@@ -58,18 +53,14 @@ public class WordProcessor implements Counter {
     @Override
     public int countLetters(String sentence) {
         // TODO [Step 3.3]: If sentence == null, assign sentence = this.text;
-        if (sentence == null) {
-            sentence = this.text;
-        }
 
         // TODO [Step 2.2]: Loop through character indices and count Character.isLetter(ch)
-        int letters = 0;
-        for (int i = 0; i < sentence.length(); i++) {
-            if (Character.isLetter(sentence.charAt(i))) {
-                letters++;
-            }
-        }
-        return letters;
+
+         int letters = 0;
+            for (int i = 0; i < sentence.length(); i++) {
+             if (Character.isLetter(sentence.charAt(i))) letters++;
+         }
+         return letters ;
     }
 
     /**
@@ -82,11 +73,8 @@ public class WordProcessor implements Counter {
     @Override
     public int getLength(String sentence) {
         // TODO [Step 3.3]: If sentence == null, assign sentence = this.text;
-        if (sentence == null) {
-            sentence = this.text;
-        }
 
         // TODO [Step 2.3]: Return sentence.length()
-        return sentence.length();
+        return sentence.length() ;
     }
 }
